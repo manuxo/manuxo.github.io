@@ -8,19 +8,19 @@
   
   <title>Introducción a Promises y Callbacks en JS | Manuel Alvarado Estanga</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="DefiniciónUna promesa (Promise) es un objeto que procesa la finalización o el fallo de una operación asíncrona. EstadosPresenta los siguientes estados:  pending: La operación no se completó aún. fullf">
+  <meta name="description" content="PromisesUna promesa (Promise) es un objeto que procesa la finalización o el fallo de una operación asíncrona. EstadosPresenta los siguientes estados:  pending: La operación no se completó aún. fullfil">
 <meta name="keywords" content="javascript,promises,async">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Introducción a Promises y Callbacks en JS">
 <meta property="og:url" content="https://manuxo.github.io/2019/07/21/promises/index.html">
 <meta property="og:site_name" content="Manuel Alvarado Estanga">
-<meta property="og:description" content="DefiniciónUna promesa (Promise) es un objeto que procesa la finalización o el fallo de una operación asíncrona. EstadosPresenta los siguientes estados:  pending: La operación no se completó aún. fullf">
+<meta property="og:description" content="PromisesUna promesa (Promise) es un objeto que procesa la finalización o el fallo de una operación asíncrona. EstadosPresenta los siguientes estados:  pending: La operación no se completó aún. fullfil">
 <meta property="og:locale" content="es">
 <meta property="og:image" content="https://manuxo.github.io/images/promises/flujo.jpg">
-<meta property="og:updated_time" content="2019-07-21T05:41:52.274Z">
+<meta property="og:updated_time" content="2019-07-21T05:43:47.144Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Introducción a Promises y Callbacks en JS">
-<meta name="twitter:description" content="DefiniciónUna promesa (Promise) es un objeto que procesa la finalización o el fallo de una operación asíncrona. EstadosPresenta los siguientes estados:  pending: La operación no se completó aún. fullf">
+<meta name="twitter:description" content="PromisesUna promesa (Promise) es un objeto que procesa la finalización o el fallo de una operación asíncrona. EstadosPresenta los siguientes estados:  pending: La operación no se completó aún. fullfil">
 <meta name="twitter:image" content="https://manuxo.github.io/images/promises/flujo.jpg">
   
     <link rel="alternate" href="/" title="Manuel Alvarado Estanga" type="application/atom+xml">
@@ -112,8 +112,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Definicion"><a href="#Definicion" class="headerlink" title="Definición"></a>Definición</h2><p>Una promesa (Promise) es un objeto que procesa la finalización o el fallo de una operación asíncrona.</p>
-<h2 id="Estados"><a href="#Estados" class="headerlink" title="Estados"></a>Estados</h2><p>Presenta los siguientes estados:</p>
+        <h2 id="Promises"><a href="#Promises" class="headerlink" title="Promises"></a>Promises</h2><p>Una promesa (Promise) es un objeto que procesa la finalización o el fallo de una operación asíncrona.</p>
+<h3 id="Estados"><a href="#Estados" class="headerlink" title="Estados"></a>Estados</h3><p>Presenta los siguientes estados:</p>
 <ul>
 <li><em>pending</em>: La operación no se completó aún.</li>
 <li><em>fullfilled</em>: La operación se completó satisfactoriamente.</li>
@@ -121,7 +121,7 @@
 </ul>
 <p>Al procesar una promesa, esta puede resultar o bien completada <em>(fullfilled)</em> con un valor, o rechazada <em>(rejected)</em> con un motivo <em>(reason)</em>.<br>Para tratar los resultados de la operación debe asociar manejadores (handlers) que se implementan a través de callbacks.</p>
 <p><img src="/images/promises/flujo.jpg" alt="Flujo"></p>
-<h2 id="Que-son-los-callbacks"><a href="#Que-son-los-callbacks" class="headerlink" title="Qué son los callbacks?"></a>Qué son los callbacks?</h2><blockquote><p>En programación, un callback es una pieza de código que se pasa como argumento a una función, la cual lo ejecuta en un momento dado.</p>
+<h2 id="Callbacks"><a href="#Callbacks" class="headerlink" title="Callbacks"></a>Callbacks</h2><blockquote><p>En programación, un callback es una pieza de código que se pasa como argumento a una función, la cual lo ejecuta en un momento dado.</p>
 <footer><strong>Wiki</strong><cite><a href="https://en.wikipedia.org/wiki/Callback_(computer_programming)" target="_blank" rel="noopener">Callback (computer programming)</a></cite></footer></blockquote>
 
 <p>En los lenguajes de programación se pueden implementar callbacks de distintas formas, en JavaScript suelen usarse arrow functions o expresiones lambdas. Ejemplo:</p>
