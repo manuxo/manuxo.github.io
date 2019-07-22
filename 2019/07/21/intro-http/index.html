@@ -6,18 +6,22 @@
   
 
   
-  <title>Manuel Alvarado Estanga</title>
+  <title>HTTP - Introducción | Manuel Alvarado Estanga</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Blog personal">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Manuel Alvarado Estanga">
-<meta property="og:url" content="https://manuxo.github.io/index.html">
+  <meta name="description" content="El protocolo HTTP  - Hypertext Transfer Protocol, es el reglamento de comunicación utilizado para el acceso y distribución de contenido en la World Wide Web. Este pertenece a la capa de aplicación (Mo">
+<meta name="keywords" content="http,servers,clients,web">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTTP - Introducción">
+<meta property="og:url" content="https://manuxo.github.io/2019/07/21/intro-http/index.html">
 <meta property="og:site_name" content="Manuel Alvarado Estanga">
-<meta property="og:description" content="Blog personal">
+<meta property="og:description" content="El protocolo HTTP  - Hypertext Transfer Protocol, es el reglamento de comunicación utilizado para el acceso y distribución de contenido en la World Wide Web. Este pertenece a la capa de aplicación (Mo">
 <meta property="og:locale" content="es">
+<meta property="og:image" content="https://mdn.mozillademos.org/files/13677/Fetching_a_page.png">
+<meta property="og:updated_time" content="2019-07-22T03:54:41.106Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Manuel Alvarado Estanga">
-<meta name="twitter:description" content="Blog personal">
+<meta name="twitter:title" content="HTTP - Introducción">
+<meta name="twitter:description" content="El protocolo HTTP  - Hypertext Transfer Protocol, es el reglamento de comunicación utilizado para el acceso y distribución de contenido en la World Wide Web. Este pertenece a la capa de aplicación (Mo">
+<meta name="twitter:image" content="https://mdn.mozillademos.org/files/13677/Fetching_a_page.png">
   
     <link rel="alternate" href="/" title="Manuel Alvarado Estanga" type="application/atom+xml">
   
@@ -78,9 +82,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-intro-http" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-intro-http" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/07/21/intro-http/" class="article-date">
   <time datetime="2019-07-22T03:54:41.000Z" itemprop="datePublished">21-07-2019</time>
@@ -97,8 +99,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/21/intro-http/">HTTP - Introducción</a>
+    <h1 class="article-title" itemprop="name">
+      HTTP - Introducción
     </h1>
   
 
@@ -161,120 +163,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-promises" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/07/21/promises/" class="article-date">
-  <time datetime="2019-07-21T05:12:58.000Z" itemprop="datePublished">21-07-2019</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Lenguajes-de-Programacion/">Lenguajes de Programación</a>►<a class="article-category-link" href="/categories/Lenguajes-de-Programacion/JavaScript/">JavaScript</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/21/promises/">Introducción a Promises y Callbacks en JS</a>
-    </h1>
+    <a href="/2019/07/21/promises/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Viejo</strong>
+      <div class="article-nav-title">Introducción a Promises y Callbacks en JS</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Promises"><a href="#Promises" class="headerlink" title="Promises"></a>Promises</h2><p>Una promesa (Promise) es un objeto que procesa la finalización o el fallo de una operación asíncrona.</p>
-<h3 id="Estados"><a href="#Estados" class="headerlink" title="Estados"></a>Estados</h3><p>Presenta los siguientes estados:</p>
-<ul>
-<li><em>pending</em>: La operación no se completó aún.</li>
-<li><em>fullfilled</em>: La operación se completó satisfactoriamente.</li>
-<li><em>rejected</em>: La operación falló.</li>
-</ul>
-<p>Al procesar una promesa, esta puede resultar o bien completada <em>(fullfilled)</em> con un valor, o rechazada <em>(rejected)</em> con un motivo <em>(reason)</em>.<br>Para tratar los resultados de la operación debe asociar manejadores (handlers) que se implementan a través de callbacks.</p>
-<p><img src="/images/promises/flujo.jpg" alt="Flujo"></p>
-<h2 id="Callbacks"><a href="#Callbacks" class="headerlink" title="Callbacks"></a>Callbacks</h2><blockquote><p>En programación, un callback es una pieza de código que se pasa como argumento a una función, la cual lo ejecuta en un momento dado.</p>
-<footer><strong>Wiki</strong><cite><a href="https://en.wikipedia.org/wiki/Callback_(computer_programming)" target="_blank" rel="noopener">Callback (computer programming)</a></cite></footer></blockquote>
-
-<p>En los lenguajes de programación se pueden implementar callbacks de distintas formas, en JavaScript suelen usarse arrow functions o expresiones lambdas. Ejemplo:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span>  foo = <span class="function"><span class="params">bar</span>  =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(bar);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>La ejecución de un callback puede ser inmediata si es <strong>síncrona</strong>, o puede darse eventualmente si es <strong>asíncrona</strong>.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://manuxo.github.io/2019/07/21/promises/" data-id="cjyduwsjw0005x8mx1xzh8xl1" class="article-share-link">Compartir</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/async/">async</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/promises/">promises</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-primer-post" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/07/20/primer-post/" class="article-date">
-  <time datetime="2019-07-20T20:50:44.000Z" itemprop="datePublished">20-07-2019</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Desarrollo-Web/">Desarrollo Web</a>►<a class="article-category-link" href="/categories/Desarrollo-Web/Frontend/">Frontend</a>►<a class="article-category-link" href="/categories/Desarrollo-Web/Frontend/Frameworks/">Frameworks</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/20/primer-post/">¡Hola Mundo!</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Bienvenidos, este es mi primer post. En este blog voy a publicar artículos sobre desarrollo web principalmente, entre otras categorías.</p>
-<p>El blog lo hice con ayuda de <a href="[https://hexo.io/](https://hexo.io/)">hexo</a>, un blog framework que sirve archivos estáticos; generándolos a partir de plantillas <a href="https://ejs.co/" target="_blank" rel="noopener">ejs</a>, también utiliza <a href="https://en.wikipedia.org/wiki/Markdown" target="_blank" rel="noopener">markdown</a>; un lenguaje de marcado comúnmente usado para generar archivos README.</p>
-<p>La instalación de hexo es muy simple; basta con correr los siguientes comandos en la terminal o command prompt (Windows):</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br><span class="line">$ hexo init blog</span><br><span class="line">$ cd blog</span><br><span class="line">$ npm install</span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<h2 id="Documentacion"><a href="#Documentacion" class="headerlink" title="Documentación"></a>Documentación</h2><p>Les dejo el tutorial para comenzar con hexo.io:</p>
-<div class="video-container"><iframe src="//www.youtube.com/embed/Kt7u5kr_P5o" frameborder="0" allowfullscreen></iframe></div>
-<p>También pueden revisar el mismo contenido en la página oficial: <a href="https://hexo.io/docs/" target="_blank" rel="noopener">Hexo Docs</a></p>
-<p>Saludos.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://manuxo.github.io/2019/07/20/primer-post/" data-id="cjyduwsjh0001x8mx6oeiwoef" class="article-share-link">Compartir</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ejs/">ejs</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo-io/">hexo.io</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/markdown/">markdown</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
